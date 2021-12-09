@@ -1,5 +1,8 @@
-document.querySelector(".visiblemenu").addEventListener("click", addWidth);
+codocument.querySelector(".visiblemenu").addEventListener("click", addWidth);
 
+var bgImg = document.querySelector("#bg");
+
+/* -----------------------------Menuwidthetc--------------------------------- */
 function addWidth() {
   document.querySelector("#dropdown-menu").classList.toggle("additionalWidth");
   document.querySelector(".visiblemenu").classList.toggle("additionalOpacity");
@@ -27,22 +30,14 @@ function burgermenuAnimation() {
 const mediaQuery = window.matchMedia("(max-width: 700px)");
 if (mediaQuery.matches) {
   document.querySelector(".visiblemenu").addEventListener("click", addWidth2);
-
-  console.log("Mediaquery");
 }
 
 function addWidth2() {
   document.querySelector("#dropdown-menu").classList.toggle("additionalWidth2");
   document.querySelector(".visiblemenu").classList.toggle("additionalMargin2");
 }
-
-/* const mediaQuery2 = window.matchMedia("(min-width: 900px)");
+const mediaQuery2 = window.matchMedia("(min-width: 700px)");
 if (mediaQuery2.matches) {
-  console.log("mediaquery2");
-  document.querySelector("#background").setAttribute = ("src", "");
-  console.log("mediaquery8");
-}
- */
-function changeBackgroundimg() {
-  /*   "../assets/homepage_backgroundimage_mobile_resized.jpg"; */
+  console.log("query2");
+  bgImg.setAttribute("src", "assets/homepage_bgimg_mobile_resized3.jpg");
 }
