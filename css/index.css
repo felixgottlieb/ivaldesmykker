@@ -209,11 +209,13 @@
 .da,
 .eng {
   padding-right: 1vw;
+  font-family: var(--generalfont);
 }
 /* -----------------------main------------------------ */
 main {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: 180vw;
 }
 .background {
   width: auto;
@@ -238,6 +240,7 @@ main {
   grid-column: 1/-1;
   grid-row: 1;
   z-index: 0;
+  overflow-x: hidden;
 }
 
 .buttons {
@@ -280,6 +283,39 @@ main {
   background-color: rgba(246, 250, 237, 1);
   border: 1px solid rgba(197, 179, 129, 1);
 }
+
+/* -----------------productlisting--------------------- */
+.listinggrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(47vw, 1fr));
+  margin: 5vw 0 0 0;
+  row-gap: 3em;
+  column-gap: 1.5em;
+}
+
+.productlisting {
+  width: 100%;
+  font-family: var(--generalfont);
+  padding-bottom: 2vw;
+}
+
+.itemimg img {
+  width: 100%;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.251);
+  transition: transform 0.1s;
+  border: 1px solid var(--goldenColor);
+}
+.itemimg img:hover {
+  transform: scale(1.02);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.251);
+}
+
+.productinfo {
+  display: flex;
+  justify-content: space-between;
+  padding: 4vw 4vw 0 4vw;
+}
+
 /* ---------------Media queries------------------ */
 
 @media (max-width: 700px) {
@@ -338,7 +374,7 @@ main {
     width: 5vw;
   }
   .buttons {
-    padding: 0 0 46vw 0;
+    padding: 15vw 0 0 0;
     align-self: center;
   }
   #bg {
@@ -347,5 +383,10 @@ main {
   }
   .welcome img {
     scale: none;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80vw;
   }
 }

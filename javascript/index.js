@@ -1,4 +1,4 @@
-codocument.querySelector(".visiblemenu").addEventListener("click", addWidth);
+document.querySelector(".visiblemenu").addEventListener("click", addWidth);
 
 var bgImg = document.querySelector("#bg");
 
@@ -39,5 +39,5 @@ function addWidth2() {
 const mediaQuery2 = window.matchMedia("(min-width: 700px)");
 if (mediaQuery2.matches) {
   console.log("query2");
-  bgImg.setAttribute("src", "assets/homepage_bgimg_mobile_resized3.jpg");
+  bgImg.setAttribute("src", "assets/bgimg_desktop.jpg");
 }
