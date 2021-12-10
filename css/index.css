@@ -16,7 +16,7 @@
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 5;
 }
 
 #menu-btn-svg {
@@ -288,7 +288,7 @@ main {
 .listinggrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(47vw, 1fr));
-  margin: 5vw 0 0 0;
+  margin: 5vw 0 20vw 0;
   row-gap: 3em;
   column-gap: 1.5em;
 }
@@ -298,7 +298,9 @@ main {
   font-family: var(--generalfont);
   padding-bottom: 2vw;
 }
-
+.itemimg {
+  overflow-x: hidden;
+}
 .itemimg img {
   width: 100%;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.251);
