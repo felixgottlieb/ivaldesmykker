@@ -1,13 +1,14 @@
-document.querySelector(".visiblemenu").addEventListener("click", addWidth);
-
-var bgImg = document.querySelector("#bg");
+document.querySelector(".burgericon").addEventListener("click", addWidth);
 
 /* -----------------------------Menuwidthetc--------------------------------- */
 function addWidth() {
+  console.log("eow");
+
   document.querySelector("#dropdown-menu").classList.toggle("additionalWidth");
-  document.querySelector(".visiblemenu").classList.toggle("additionalOpacity");
-  document.querySelector(".visiblemenu").classList.toggle("additionalMargin");
-  document.querySelector(".visiblemenu").classList.remove(".visiblemenu:hover");
+  document
+    .querySelector("#dropdown-menu")
+    .classList.toggle("additionalOpacity");
+  document.querySelector(".secondhalf").classList.toggle("additionalMargin");
   document
     .querySelector(".welcome")
     .classList.toggle("additionalOpacityWelcome");
@@ -15,27 +16,32 @@ function addWidth() {
 
 /* ----------------Burgermenu animation------------------- */
 document
-  .querySelector(".visiblemenu")
+  .querySelector(".burgericon")
   .addEventListener("click", burgermenuAnimation);
 
 function burgermenuAnimation() {
-  console.log("mojn");
   document.querySelector(".one").classList.toggle("lineOne");
   document.querySelector(".two").classList.toggle("lineTwo");
   document.querySelector(".three").classList.toggle("lineThree");
-  document.querySelector(".visiblemenu").classList.toggle("additionPadding");
 }
 /* ---------------Media queries------------------ */
 
 const mediaQuery = window.matchMedia("(max-width: 700px)");
 if (mediaQuery.matches) {
-  document.querySelector(".visiblemenu").addEventListener("click", addWidth2);
+  document.querySelector(".secondhalf").addEventListener("click", addWidth2);
+  document
+    .querySelector(".burgericon")
+    .addEventListener("click", changeDisplay);
 }
 
 function addWidth2() {
-  document.querySelector("#dropdown-menu").classList.toggle("additionalWidth2");
-  document.querySelector(".visiblemenu").classList.toggle("additionalMargin2");
+  document.querySelector(".dropdown").classList.toggle("additionalWidth2");
 }
+function changeDisplay() {
+  document.querySelector(".logo-image").classList.toggle("changeOpacity");
+  document.querySelector(".icons").classList.toggle("changeOpacity");
+}
+var bgImg = document.querySelector("#bg");
 const mediaQuery2 = window.matchMedia("(min-width: 700px)");
 if (mediaQuery2.matches) {
   console.log("query2");
