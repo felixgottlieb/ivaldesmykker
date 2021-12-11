@@ -14,7 +14,40 @@
     />
   </head>
   <body>
-    <nav class="dropdown-nav" id="dropdown-menu">
+    <nav class="headernav">
+      <div class="burgericon">
+        <svg id="menu-btn-svg" viewBox="0 0 100 100">
+          <rect class="one" x="35" y="35.5" width="30" height="1" />
+          <rect class="two" x="35" y="45" width="30" height="1" />
+          <rect class="three" x="35" y="55.5" width="30" height="1" />
+        </svg>
+      </div>
+      <div class="logo-image">
+        <img
+          src="/assets/BLACK.png"
+          alt="IVALDE written i large black letters"
+        />
+      </div>
+      <div class="icons">
+        <p class="da">DA</p>
+        <p class="eng">ENG</p>
+        <div class="carticon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-cart"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+            />
+          </svg>
+        </div>
+      </div>
+    </nav>
+    <nav class="slideout-nav" id="slideout-menu">
       <div class="firsthalf">
         <div class="searchbar">
           <input type="text" placeholder="Search.." />
@@ -83,53 +116,11 @@ S20.1,24.7,14.4,24.7z"
         <div class="paragraph"><p>MENU</p></div>
       </div>
     </nav>
-    <nav class="desktopmenu">
-      <div class="burgericon">
-        <svg id="menu-btn-svg" viewBox="0 0 100 100">
-          <rect class="one" x="35" y="35.5" width="30" height="1" />
-          <rect class="two" x="35" y="45" width="30" height="1" />
-          <rect class="three" x="35" y="55.5" width="30" height="1" />
-        </svg>
-      </div>
-      <div class="logo-image">
-        <img
-          src="/assets/BLACK.png"
-          alt="IVALDE written i large black letters"
-        />
-      </div>
-      <div class="icons">
-        <p class="da">DA</p>
-        <p class="eng">ENG</p>
-        <div class="carticon">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-cart"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
-            />
-          </svg>
-        </div>
-      </div>
-    </nav>
     <main>
-      <!-- <section class="menues">
-        <!--   <div class="visiblemenu">
-          <svg id="menu-btn-svg" viewBox="0 0 100 100">
-            <rect class="one" x="35" y="35.5" width="30" height="1" />
-            <rect class="two" x="35" y="45" width="30" height="1" />
-            <rect class="three" x="35" y="55.5" width="30" height="1" />
-          </svg>
-          <div class="paragraph"><p>MENU</p></div>
-        </div> -->
-      </section> -->
+      <div class="asidecontainer"><aside id="menutag">MENU</aside></div>
+
       <section class="welcome">
         <div class="bgimgcontainer">
-          <!-- <div class="bgimg"></div> -->
           <img id="bg" src="assets/bgimg_mobile.jpg" alt="" />
         </div>
         <div class="buttons">
@@ -159,7 +150,7 @@ S20.1,24.7,14.4,24.7z"
           <figure class="itemimg">
             <a href="#"
               ><img
-                src="assets/earring_model_resized.jpg"
+                src="assets/earring_model_resized_L.jpg"
                 alt="mandala shaped earring"
             /></a>
           </figure>
@@ -172,7 +163,7 @@ S20.1,24.7,14.4,24.7z"
           <figure class="itemimg">
             <a href="#"
               ><img
-                src="assets/ring_flet_resized.jpg"
+                src="assets/ring_flet_resized_L.jpg"
                 alt="mandala shaped earring"
             /></a>
           </figure>
@@ -185,7 +176,7 @@ S20.1,24.7,14.4,24.7z"
           <figure class="itemimg">
             <a href="#"
               ><img
-                src="assets/necklace_spiral_bird_resized.jpg"
+                src="assets/necklace_spiral_bird_resized_L.jpg"
                 alt="mandala shaped earring"
             /></a>
           </figure>
@@ -198,7 +189,7 @@ S20.1,24.7,14.4,24.7z"
           <figure class="itemimg">
             <a href="#"
               ><img
-                src="assets/earring_lotus_model.jpg"
+                src="assets/earring_lotus_model_L.jpg"
                 alt="mandala shaped earring"
             /></a>
           </figure>
@@ -210,7 +201,7 @@ S20.1,24.7,14.4,24.7z"
         <article class="productlisting">
           <figure class="itemimg">
             <a href="#"
-              ><img src="assets/ring_lapiz.jpg" alt="mandala shaped earring"
+              ><img src="assets/ring_lapiz_L.jpg" alt="mandala shaped earring"
             /></a>
           </figure>
           <div class="productinfo">
@@ -221,7 +212,9 @@ S20.1,24.7,14.4,24.7z"
         <article class="productlisting">
           <figure class="itemimg">
             <a href="#"
-              ><img src="assets/necklace_dreamcatcher_rosenkvartz.jpg" alt="#"
+              ><img
+                src="assets/necklace_dreamcatcher_rosenkvartz_L.jpg"
+                alt="#"
             /></a>
           </figure>
           <div class="productinfo">
