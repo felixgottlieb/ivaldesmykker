@@ -6,14 +6,6 @@ function addWidth() {
   document
     .querySelector("#slideout-menu")
     .classList.toggle("additionalOpacity");
-  document
-    .querySelector(".welcome")
-    .classList.toggle("additionalOpacityWelcome");
-  document
-    .querySelector(".listinggrid")
-    .classList.toggle("additionalOpacityWelcome");
-  document.querySelector(".listinggrid").classList.toggle("noClickEvents");
-  document.querySelector(".welcome").classList.toggle("noClickEvents");
   document.querySelector(".one").classList.toggle("lineOne");
   document.querySelector(".two").classList.toggle("lineTwo");
   document.querySelector(".three").classList.toggle("lineThree");
@@ -37,9 +29,6 @@ var bgImg = document.querySelector("#bg");
 
 const mediaQuery2 = window.matchMedia("(min-width: 700px)");
 if (mediaQuery2.matches) {
-  console.log("query2");
-  bgImg.setAttribute("src", "assets/bgimg_desktop.jpg");
-
   document.querySelector(".asidecontainer").addEventListener("click", addWidth);
   document.querySelector(".secondhalf").addEventListener("click", addWidth);
 }
