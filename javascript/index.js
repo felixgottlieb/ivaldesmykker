@@ -9,6 +9,11 @@ function addWidth() {
   document
     .querySelector(".welcome")
     .classList.toggle("additionalOpacityWelcome");
+  document
+    .querySelector(".listinggrid")
+    .classList.toggle("additionalOpacityWelcome");
+  document.querySelector(".listinggrid").classList.toggle("noClickEvents");
+  document.querySelector(".welcome").classList.toggle("noClickEvents");
   document.querySelector(".one").classList.toggle("lineOne");
   document.querySelector(".two").classList.toggle("lineTwo");
   document.querySelector(".three").classList.toggle("lineThree");

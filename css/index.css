@@ -160,6 +160,10 @@
   transition: 0.5s ease-in-out;
 }
 
+.noClickEvents {
+  pointer-events: none;
+}
+
 /* --------------------Burgermenu animation------------------ */
 
 .lineOne {
@@ -367,8 +371,6 @@ main {
     width: 35vw;
   }
 
-  #menu-btn-svg {
-  }
   .paragraph {
     align-self: start;
     transform: rotate(270deg);
@@ -395,7 +397,7 @@ main {
   }
   .listinggrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
     grid-column: 1/-1;
     margin: 0vw 4vw 20vw 8vw;
     row-gap: 3em;
