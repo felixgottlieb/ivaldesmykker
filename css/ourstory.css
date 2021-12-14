@@ -39,7 +39,7 @@
 }
 
 .icons {
-  display: flex;
+  display: none;
   justify-content: end;
   align-items: center;
 }
@@ -188,7 +188,50 @@
 .noClickEvents {
   pointer-events: none;
 }
+/* --------------------Our story content------------------ */
 
+.ourstory {
+  grid-column: 1/-1;
+  font-family: var(--generalfont);
+}
+.ourstory img {
+  width: 100%;
+}
+.maintext {
+  margin: 5vw 9vw;
+  font-family: var(--generalfont);
+  grid-column: 2;
+}
+h2 {
+  margin: 10px 0;
+  font-weight: 300;
+  grid-column: 2;
+}
+.borderContainer {
+  height: 0.8px;
+  background-color: var(--goldenColor);
+  width: 50vw;
+  margin: 0 auto;
+}
+
+h2,
+p {
+  text-align: center;
+}
+p {
+  margin-top: 4vw;
+}
+figure {
+  margin: 10vw 0 5vw 0;
+  display: flex;
+}
+figure :first-child {
+  padding: 0 0.5vw 0 1vw;
+}
+
+figure :last-child {
+  padding: 0 1vw 0 0.5vw;
+}
 /* --------------------Burgermenu animation------------------ */
 
 .lineOne {
@@ -229,7 +272,6 @@
   main {
     display: grid;
     grid-template-columns: 45px 1fr;
-    grid-template-rows: 80vw;
   }
   .slideout-nav {
     border-right: 1px solid rgba(0, 0, 0, 0);
@@ -260,21 +302,21 @@
     align-self: center;
     transform: rotate(270deg);
   }
-  .listinggrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
-    grid-column: 1/-1;
-    margin: 0vw 4vw 20vw 8vw;
-    row-gap: 3em;
-    column-gap: 1.5em;
-  }
-  .productinfo {
-    display: flex;
-    justify-content: space-between;
-    padding: 1vw 1vw 0 1vw;
-  }
   .da,
   .eng {
     font-size: 1rem;
+  }
+  .icons {
+    display: flex;
+  }
+  .textgrid {
+    display: grid;
+    grid-template-columns: 30vw 1fr 30vw;
+  }
+  .maintext {
+    margin: 0;
+  }
+  .borderContainer {
+    grid-column: 2;
   }
 }

@@ -193,7 +193,7 @@
 }
 
 .icons {
-  display: flex;
+  display: none;
   justify-content: end;
   align-items: center;
 }
@@ -377,5 +377,8 @@ figure img {
   .size,
   .quantity {
     padding: 0 1vw;
+  }
+  .icons {
+    display: flex;
   }
 }

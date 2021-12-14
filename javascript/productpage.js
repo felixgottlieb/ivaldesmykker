@@ -6,18 +6,11 @@ function addWidth() {
   document
     .querySelector("#slideout-menu")
     .classList.toggle("additionalOpacity");
-  document
-    .querySelector(".welcome")
-    .classList.toggle("additionalOpacityWelcome");
-  document
-    .querySelector(".listinggrid")
-    .classList.toggle("additionalOpacityWelcome");
+
   document
     .querySelector(".logo-image")
     .classList.toggle("additionalOpacityWelcome");
   document.querySelector(".icons").classList.toggle("additionalOpacityWelcome");
-  document.querySelector(".listinggrid").classList.toggle("noClickEvents");
-  document.querySelector(".welcome").classList.toggle("noClickEvents");
   document.querySelector(".logo-image").classList.toggle("noClickEvents");
   document.querySelector(".icons").classList.toggle("noClickEvents");
   document.querySelector(".one").classList.toggle("lineOne");

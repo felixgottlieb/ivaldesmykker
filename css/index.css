@@ -39,7 +39,7 @@
 }
 
 .icons {
-  display: flex;
+  display: none;
   justify-content: end;
   align-items: center;
 }
@@ -411,5 +411,8 @@ main {
   .da,
   .eng {
     font-size: 1rem;
+  }
+  .icons {
+    display: flex;
   }
 }
