@@ -6,18 +6,7 @@ function addWidth() {
   document
     .querySelector("#slideout-menu")
     .classList.toggle("additionalOpacity");
-  document
-    .querySelector(".welcome")
-    .classList.toggle("additionalOpacityWelcome");
-  document
-    .querySelector(".listinggrid")
-    .classList.toggle("additionalOpacityWelcome");
-  document
-    .querySelector(".logo-image")
-    .classList.toggle("additionalOpacityWelcome");
-  document.querySelector(".icons").classList.toggle("additionalOpacityWelcome");
-  document.querySelector(".listinggrid").classList.toggle("noClickEvents");
-  document.querySelector(".welcome").classList.toggle("noClickEvents");
+
   document.querySelector(".logo-image").classList.toggle("noClickEvents");
   document.querySelector(".icons").classList.toggle("noClickEvents");
   document.querySelector(".one").classList.toggle("lineOne");
@@ -39,12 +28,26 @@ function changeDisplay() {
   document.querySelector(".icons").classList.toggle("changeOpacity");
 }
 
-var bgImg = document.querySelector("#bg");
-
 const mediaQuery2 = window.matchMedia("(min-width: 700px)");
 if (mediaQuery2.matches) {
   document.querySelector(".asidecontainer").addEventListener("click", addWidth);
   document.querySelector(".secondhalf").addEventListener("click", addWidth);
-}
+  document
+    .querySelector(".asidecontainer")
+    .addEventListener("click", LogoandIconOpac);
+  document
+    .querySelector(".secondhalf")
+    .addEventListener("click", LogoandIconOpac);
+  document
+    .querySelector(".burgericon")
+    .addEventListener("click", LogoandIconOpac);
 
-/* -------------------MOBILE GALLERY------------------------------ */
+  function LogoandIconOpac() {
+    document
+      .querySelector(".logo-image")
+      .classList.toggle("additionalOpacityWelcome");
+    document
+      .querySelector(".icons")
+      .classList.toggle("additionalOpacityWelcome");
+  }
+}

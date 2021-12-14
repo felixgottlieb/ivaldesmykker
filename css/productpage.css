@@ -374,4 +374,8 @@ figure img {
   .addtocart {
     margin-top: 1vw;
   }
+  .size,
+  .quantity {
+    padding: 0 1vw;
+  }
 }
