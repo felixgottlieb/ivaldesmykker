@@ -146,14 +146,14 @@
 }
 .categoryheader2,
 .categoryheader3 {
-  margin-top: 15vw;
+  margin-top: 6vw;
 }
 .subcategories1,
 .subcategories2,
 .subcategories3 {
   display: flex;
   flex-direction: column;
-  margin-top: 2vw;
+  margin-top: 1vw;
   padding: 0;
 }
 .subcategories1 li,
@@ -178,7 +178,6 @@
 
 .additionalOpacity {
   background-color: rgba(255, 255, 255, 1);
-  border-right: 1px solid rgba(0, 0, 0, 1);
 }
 .additionalOpacityWelcome {
   opacity: 0.5;
@@ -280,7 +279,7 @@ main {
   scale: 1.02;
 }
 
-/* -----------------productlisting--------------------- */
+/* -----------------Product--------------------- */
 .listinggrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50vw, 1fr));
@@ -289,7 +288,7 @@ main {
   column-gap: 1.5em;
 }
 
-.productlisting {
+.product {
   width: 100%;
   font-family: var(--generalfont);
   padding-bottom: 2vw;
