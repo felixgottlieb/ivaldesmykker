@@ -51,3 +51,52 @@ if (mediaQuery2.matches) {
       .classList.toggle("additionalOpacityWelcome");
   }
 }
+/* -------------------FETCHING DATA------------------------------ */
+const urlParams = new URLSearchParams(window.location.search);
+const category = urlParams.get("category");
+
+const url = `https://naturalwinedata-1fc5.restdb.io/rest/ivaldeproducts?q={"Category":"${category}"}`;
+
+console.log(url);
+const options = {
+  headers: {
+    "x-apikey": "61387a0c43cedb6d1f97ee32",
+  },
+};
+
+fetch(url, options)
+  .then((response) => {
+    if (!response.ok) {
+      throw Error(response.statusText);
+    }
+    return response.json();
+  })
+
+  .then((data) => {
+    handleData(data);
+  })
+
+  .catch((e) => {
+    console.error("An error occured:", e.message);
+  });
+function handleData(jewellery) {
+  /* console.log(jewellery);
+  console.log("pieceofart"); */
+  jewellery.forEach(singePiece);
+}
+
+function singePiece(item) {
+  const template = document.querySelector("#datatemplate").content;
+  console.log(item);
+  const copy = template.cloneNode(true);
+  copy
+    .querySelector(".itemimg a")
+    .setAttribute("href", "productpage.html?id=" + item._id);
+  copy.querySelector(".itemname").textContent = item.Title;
+  copy.querySelector(".itemprice").textContent = item.Price;
+  copy.querySelector("img").src = item.primary_img;
+
+  const parent = document.querySelector(".productgrid");
+
+  parent.appendChild(copy);
+}

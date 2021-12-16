@@ -70,19 +70,19 @@ S20.1,24.7,14.4,24.7z"
         <h3 class="categoryheader1">Categories</h3>
         <ul class="subcategories1">
           <li>
-            <a href="#">All products</a>
+            <a href="html/products_listed.html">All products</a>
           </li>
           <li>
-            <a href="#">Earrings</a>
+            <a href="html/products_listed.html?category=Earrings">Earrings</a>
           </li>
           <li>
-            <a href="#">Rings</a>
+            <a href="html/products_listed.html?category=Rings">Rings</a>
           </li>
           <li>
-            <a href="#">Bracelets</a>
+            <a href="html/products_listed.html?category=Bracelets">Bracelets</a>
           </li>
           <li>
-            <a href="#">Necklaces</a>
+            <a href="html/products_listed.html?category=Necklace">Necklaces</a>
           </li>
         </ul>
         <h3 class="categoryheader2">Ivalde</h3>
@@ -121,136 +121,34 @@ S20.1,24.7,14.4,24.7z"
       <div class="asidecontainer"><aside id="menutag">MENU</aside></div>
 
       <section class="welcome">
-        <div class="bgimgcontainer">
-          <img id="bg" src="assets/bgimg_mobile.jpg" alt="" />
-        </div>
+        <figure class="bgimgcontainer">
+          <!--           <img id="bg" src="assets/bgimg_mobile.jpg" alt="" />
+ -->
+          <video
+            src="assets/ivalde_loop_video.mp4"
+            type="video/mp4"
+            loop
+            autoplay
+            muted
+          ></video>
+        </figure>
         <div class="buttons">
-          <a
-            href="https://www.tv2ostjylland.dk/aarhus/nyt-spor-i-sag-om-forsvundet-29-aarig-politiet-efterlyser-ung-mand-paa-damecykel?fbclid=IwAR1MpAZYD2_jb8kwgtmPlfBWUJWUf72G14d5vYRXXF2KwI5qh07pX24JLY4"
-            ><button class="shopnow">SHOP NOW</button></a
-          >
+          <a href="#"><button class="shopnow">SHOP NOW</button></a>
           <a href="#"><button class="about">ABOUT</button></a>
         </div>
       </section>
 
       <section class="listinggrid">
-        <article class="product">
-          <figure class="itemimg">
-            <a href="html/productpage.html"
-              ><img
-                src="assets/ring_flet_resized_L.jpg"
-                alt="mandala shaped earring"
-            /></a>
-          </figure>
-          <div class="productinfo">
-            <p>Waves ring</p>
-            <p>499 dkk</p>
-          </div>
-        </article>
-        <article class="product">
-          <figure class="itemimg">
-            <a href="html/productpage.html"
-              ><img
-                src="assets/ring_flet_resized_L.jpg"
-                alt="mandala shaped earring"
-            /></a>
-          </figure>
-          <div class="productinfo">
-            <p>Waves ring</p>
-            <p>499 dkk</p>
-          </div>
-        </article>
-        <article class="product">
-          <figure class="itemimg">
-            <a href="html/productpage.html"
-              ><img
-                src="assets/ring_flet_resized_L.jpg"
-                alt="mandala shaped earring"
-            /></a>
-          </figure>
-          <div class="productinfo">
-            <p>Waves ring</p>
-            <p>499 dkk</p>
-          </div>
-        </article>
-        <article class="product">
-          <figure class="itemimg">
-            <a href="html/productpage.html"
-              ><img
-                src="assets/ring_flet_resized_L.jpg"
-                alt="mandala shaped earring"
-            /></a>
-          </figure>
-          <div class="productinfo">
-            <p>Waves ring</p>
-            <p>499 dkk</p>
-          </div>
-        </article>
-        <article class="product">
-          <figure class="itemimg">
-            <a href="html/productpage.html"
-              ><img
-                src="assets/ring_flet_resized_L.jpg"
-                alt="mandala shaped earring"
-            /></a>
-          </figure>
-          <div class="productinfo">
-            <p>Waves ring</p>
-            <p>499 dkk</p>
-          </div>
-        </article>
-        <article class="product">
-          <figure class="itemimg">
-            <a href="html/productpage.html"
-              ><img
-                src="assets/ring_flet_resized_L.jpg"
-                alt="mandala shaped earring"
-            /></a>
-          </figure>
-          <div class="productinfo">
-            <p>Waves ring</p>
-            <p>499 dkk</p>
-          </div>
-        </article>
-        <article class="product">
-          <figure class="itemimg">
-            <a href="html/productpage.html"
-              ><img
-                src="assets/ring_flet_resized_L.jpg"
-                alt="mandala shaped earring"
-            /></a>
-          </figure>
-          <div class="productinfo">
-            <p>Waves ring</p>
-            <p>499 dkk</p>
-          </div>
-        </article>
-        <article class="product">
-          <figure class="itemimg">
-            <a href="html/productpage.html"
-              ><img
-                src="assets/ring_flet_resized_L.jpg"
-                alt="mandala shaped earring"
-            /></a>
-          </figure>
-          <div class="productinfo">
-            <p>Waves ring</p>
-            <p>499 dkk</p>
-          </div>
-        </article>
-        <article class="product">
-          <figure class="itemimg">
-            <a href="html/productpage.html"
-              ><img
-                src="assets/ring_flet_resized_L.jpg"
-                alt="mandala shaped earring"
-            /></a>
-          </figure>
-          <div class="productinfo">
-            <p>Waves ring</p>
-            <p>499 dkk</p>
-          </div>
-        </article>
+        <template id="datatemplate">
+          <article class="product">
+            <figure class="itemimg">
+              <a href="html/productpage.html"><img src="#" alt="#" /></a>
+            </figure>
+            <div class="productinfo">
+              <p class="itemname"></p>
+              <p class="itemprice"></p>
+            </div></article
+        ></template>
       </section>
     </main>
   </body>

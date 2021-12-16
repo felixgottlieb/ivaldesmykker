@@ -209,7 +209,6 @@
 main {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 180vw;
 }
 .background {
   width: auto;
@@ -235,7 +234,9 @@ main {
   z-index: 0;
   overflow-x: hidden;
 }
-
+video {
+  width: 100%;
+}
 .buttons {
   display: flex;
   position: relative;
@@ -363,7 +364,6 @@ main {
   main {
     display: grid;
     grid-template-columns: 45px 1fr;
-    grid-template-rows: 80vw;
   }
   .slideout-nav {
     border-right: 1px solid rgba(0, 0, 0, 0);
@@ -413,5 +413,8 @@ main {
   }
   .icons {
     display: flex;
+  }
+  video {
+    transform: translate(0px, -90px);
   }
 }

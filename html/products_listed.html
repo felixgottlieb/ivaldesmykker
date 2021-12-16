@@ -70,19 +70,19 @@
         <h3 class="categoryheader1">Categories</h3>
         <ul class="subcategories1">
           <li>
-            <a href="#">All products</a>
+            <a href="products_listed.html">All products</a>
           </li>
           <li>
-            <a href="#">Earrings</a>
+            <a href="products_listed.html?category=Earrings">Earrings</a>
           </li>
           <li>
-            <a href="#">Rings</a>
+            <a href="products_listed.html?category=Rings">Rings</a>
           </li>
           <li>
-            <a href="#">Bracelets</a>
+            <a href="products_listed.html?category=Bracelets">Bracelets</a>
           </li>
           <li>
-            <a href="#">Necklaces</a>
+            <a href="products_listed.html?category=Necklace">Necklaces</a>
           </li>
         </ul>
         <h3 class="categoryheader2">Ivalde</h3>
@@ -125,78 +125,16 @@
 
       <div class="asidecontainer"><aside id="menutag">MENU</aside></div>
       <section class="productgrid">
-        <article class="product">
-          <figure class="itemimg">
-            <a href="html/productpage.html"
-              ><img
-                src="../assets/earring_resized_L.jpg"
-                alt="mandala shaped earring"
-            /></a>
-          </figure>
-          <div class="productinfo">
-            <p>Earrings</p>
-          </div>
-        </article>
-        <article class="product">
-          <figure class="itemimg">
-            <a href="html/productpage.html"
-              ><img
-                src="../assets/ring_lapiz_L.jpg"
-                alt="mandala shaped earring"
-            /></a>
-          </figure>
-          <div class="productinfo">
-            <p>Rings</p>
-          </div>
-        </article>
-        <article class="product">
-          <figure class="itemimg">
-            <a href="html/productpage.html"
-              ><img
-                src="../assets/necklace_dreamcatcher_rosenkvartz_L.jpg"
-                alt="mandala shaped earring"
-            /></a>
-          </figure>
-          <div class="productinfo">
-            <p>Necklaces</p>
-          </div>
-        </article>
-        <article class="product">
-          <figure class="itemimg">
-            <a href="html/productpage.html"
-              ><img
-                src="../assets/earring_resized_L.jpg"
-                alt="mandala shaped earring"
-            /></a>
-          </figure>
-          <div class="productinfo">
-            <p>Earrings</p>
-          </div>
-        </article>
-        <article class="product">
-          <figure class="itemimg">
-            <a href="html/productpage.html"
-              ><img
-                src="../assets/ring_lapiz_L.jpg"
-                alt="mandala shaped earring"
-            /></a>
-          </figure>
-          <div class="productinfo">
-            <p>Rings</p>
-          </div>
-        </article>
-        <article class="product">
-          <figure class="itemimg">
-            <a href="html/productpage.html"
-              ><img
-                src="../assets/necklace_dreamcatcher_rosenkvartz_L.jpg"
-                alt="mandala shaped earring"
-            /></a>
-          </figure>
-          <div class="productinfo">
-            <p>Necklaces</p>
-          </div>
-        </article>
+        <template id="datatemplate">
+          <article class="product">
+            <figure class="itemimg">
+              <a href="productpage.html"><img src="#" alt="#" /></a>
+            </figure>
+            <div class="productinfo">
+              <p class="itemname"></p>
+              <p class="itemprice"></p>
+            </div></article
+        ></template>
       </section>
     </main>
     <script src="../javascript/products_listed.js"></script>

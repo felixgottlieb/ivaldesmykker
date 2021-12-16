@@ -40,4 +40,41 @@ if (mediaQuery2.matches) {
   document.querySelector(".secondhalf").addEventListener("click", addWidth);
 }
 
-/* -------------------MOBILE GALLERY------------------------------ */
+/* -------------------Fetching date------------------------------ */
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get("id");
+const url = "https://naturalwinedata-1fc5.restdb.io/rest/ivaldeproducts/" + id;
+
+const options = {
+  headers: {
+    "x-apikey": "61387a0c43cedb6d1f97ee32",
+  },
+};
+
+fetch(url, options)
+  .then((response) => {
+    if (!response.ok) {
+      throw Error(response.statusText);
+    }
+    return response.json();
+  })
+
+  .then((data) => {
+    handleData(data);
+  })
+
+  .catch((e) => {
+    console.error("An error occured:", e.message);
+  });
+function handleData(item) {
+  console.log(item);
+
+  document.querySelector(".img1").src = item.primary_img;
+  document.querySelector(".img2").src = item.img_2;
+  document.querySelector(".img3").src = item.img_3;
+  document.querySelector(".img4").src = item.img_4;
+  document.querySelector(".name").textContent = item.Title;
+  document.querySelector(".desc").textContent = item.Description;
+  /*   document.querySelector("document.title").textContent = item.title;
+   */
+}
