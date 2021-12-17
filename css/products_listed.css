@@ -245,7 +245,7 @@ main {
   padding: 1vw 0 0 0;
 }
 .productinfo p {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-family: var(--generalfont);
 }
 .titelplusborder {
@@ -347,7 +347,7 @@ main {
     padding: 1vw 0 0 0;
   }
   .titelplusborder {
-    margin: 12vw 0 6vw 0;
+    margin: 12vw 0 4vw 0;
     grid-column: 1/-1;
     justify-self: center;
     width: 23vw;

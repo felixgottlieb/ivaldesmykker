@@ -6,6 +6,7 @@ function addWidth() {
   document
     .querySelector("#slideout-menu")
     .classList.toggle("additionalOpacity");
+  document.querySelector("main").classList.toggle("additionalOpacityWelcome");
 
   document.querySelector(".logo-image").classList.toggle("noClickEvents");
   document.querySelector(".icons").classList.toggle("noClickEvents");

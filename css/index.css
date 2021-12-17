@@ -246,7 +246,7 @@ video {
   flex-direction: column;
   margin: 0 auto 0 auto;
   z-index: 4;
-  padding-top: 140vw;
+  padding-top: 105vw;
 }
 .shopnow {
   width: 200px;
@@ -333,7 +333,8 @@ video {
     height: 45px;
   }
   .buttons {
-    padding-top: 127vw;
+    /*     padding-top: 127vw;
+ */
   }
   .productinfo p {
     font-size: 1.2rem;
@@ -415,6 +416,12 @@ video {
     display: flex;
   }
   video {
-    transform: translate(0px, -90px);
+    transform: translate(0px, -30px);
+  }
+}
+
+@media (min-width: 1268px) {
+  video {
+    transform: translate(0px, -75px);
   }
 }

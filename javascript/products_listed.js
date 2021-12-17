@@ -6,6 +6,8 @@ function addWidth() {
   document
     .querySelector("#slideout-menu")
     .classList.toggle("additionalOpacity");
+  document.querySelector("main").classList.toggle("additionalOpacityWelcome");
+  document.querySelector(".productgrid").classList.toggle("noClickEvents");
 
   document.querySelector(".logo-image").classList.toggle("noClickEvents");
   document.querySelector(".icons").classList.toggle("noClickEvents");
@@ -80,8 +82,6 @@ fetch(url, options)
     console.error("An error occured:", e.message);
   });
 function handleData(jewellery) {
-  /* console.log(jewellery);
-  console.log("pieceofart"); */
   jewellery.forEach(singePiece);
 }
 
@@ -89,14 +89,14 @@ function singePiece(item) {
   const template = document.querySelector("#datatemplate").content;
   console.log(item);
   const copy = template.cloneNode(true);
+  document.querySelector("h1").textContent = item.Category;
+
   copy
     .querySelector(".itemimg a")
     .setAttribute("href", "productpage.html?id=" + item._id);
   copy.querySelector(".itemname").textContent = item.Title;
   copy.querySelector(".itemprice").textContent = item.Price;
   copy.querySelector("img").src = item.primary_img;
-
   const parent = document.querySelector(".productgrid");
-
   parent.appendChild(copy);
 }

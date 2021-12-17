@@ -11,6 +11,10 @@ function addWidth() {
     .querySelector(".logo-image")
     .classList.toggle("additionalOpacityWelcome");
   document.querySelector(".icons").classList.toggle("additionalOpacityWelcome");
+  document.querySelector("main").classList.toggle("additionalOpacityWelcome");
+  document.querySelector(".addtocart").classList.toggle("noClickEvents");
+  document.querySelector(".size").classList.toggle("noClickEvents");
+
   document.querySelector(".logo-image").classList.toggle("noClickEvents");
   document.querySelector(".icons").classList.toggle("noClickEvents");
   document.querySelector(".one").classList.toggle("lineOne");
@@ -75,6 +79,8 @@ function handleData(item) {
   document.querySelector(".img4").src = item.img_4;
   document.querySelector(".name").textContent = item.Title;
   document.querySelector(".desc").textContent = item.Description;
+  document.querySelector(".price").textContent = item.Price;
+
   /*   document.querySelector("document.title").textContent = item.title;
    */
 }

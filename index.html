@@ -25,7 +25,7 @@
       <div class="logo-image">
         <a href="index.html">
           <img
-            src="/assets/BLACK.png"
+            src="assets/BLACK.png"
             alt="IVALDE written i large black letters"
         /></a>
       </div>
@@ -70,7 +70,9 @@ S20.1,24.7,14.4,24.7z"
         <h3 class="categoryheader1">Categories</h3>
         <ul class="subcategories1">
           <li>
-            <a href="html/products_listed.html">All products</a>
+            <a href="html/products_listed.html?category=allproducts"
+              >All products</a
+            >
           </li>
           <li>
             <a href="html/products_listed.html?category=Earrings">Earrings</a>
@@ -82,7 +84,7 @@ S20.1,24.7,14.4,24.7z"
             <a href="html/products_listed.html?category=Bracelets">Bracelets</a>
           </li>
           <li>
-            <a href="html/products_listed.html?category=Necklace">Necklaces</a>
+            <a href="html/products_listed.html?category=Necklaces">Necklaces</a>
           </li>
         </ul>
         <h3 class="categoryheader2">Ivalde</h3>
@@ -122,10 +124,9 @@ S20.1,24.7,14.4,24.7z"
 
       <section class="welcome">
         <figure class="bgimgcontainer">
-          <!--           <img id="bg" src="assets/bgimg_mobile.jpg" alt="" />
- -->
           <video
-            src="assets/ivalde_loop_video.mp4"
+            id="bgVid"
+            src="assets/Ivalde_website_phone.mp4"
             type="video/mp4"
             loop
             autoplay
@@ -134,7 +135,7 @@ S20.1,24.7,14.4,24.7z"
         </figure>
         <div class="buttons">
           <a href="#"><button class="shopnow">SHOP NOW</button></a>
-          <a href="#"><button class="about">ABOUT</button></a>
+          <a href="html/ourstory.html"><button class="about">ABOUT</button></a>
         </div>
       </section>
 
@@ -142,13 +143,14 @@ S20.1,24.7,14.4,24.7z"
         <template id="datatemplate">
           <article class="product">
             <figure class="itemimg">
-              <a href="html/productpage.html"><img src="#" alt="#" /></a>
+              <a href="#"><img src="#" alt="#" /></a>
             </figure>
             <div class="productinfo">
               <p class="itemname"></p>
-              <p class="itemprice"></p>
-            </div></article
-        ></template>
+              <p><span class="itemprice"></span> dkk</p>
+            </div>
+          </article></template
+        >
       </section>
     </main>
   </body>

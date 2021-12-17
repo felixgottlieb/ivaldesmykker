@@ -24,7 +24,7 @@ function addWidth() {
 
 /* ---------------Media queries------------------ */
 
-const mediaQuery = window.matchMedia("(max-width: 700px)");
+/* const mediaQuery = window.matchMedia("(max-width: 700px)");
 if (mediaQuery.matches) {
   document
     .querySelector(".burgericon")
@@ -35,13 +35,18 @@ function changeDisplay() {
   document.querySelector(".logo-image").classList.toggle("changeOpacity");
   document.querySelector(".icons").classList.toggle("changeOpacity");
 }
+ */
 
-var bgImg = document.querySelector("#bg");
+var bgVid = document.querySelector("#bgVid");
 
+const mediaQuery1 = window.matchMedia("(min-width: 500px)");
+if (mediaQuery1.matches) {
+  bgVid.setAttribute("src", "assets/Ivalde_website_tablet.mp4");
+}
 const mediaQuery2 = window.matchMedia("(min-width: 700px)");
 if (mediaQuery2.matches) {
-  /*   bgImg.setAttribute("src", "assets/bgimg_desktop.jpg");
-   */
+  bgVid.setAttribute("src", "assets/Ivalde_website_desktop.mp4");
+
   document.querySelector(".asidecontainer").addEventListener("click", addWidth);
   document.querySelector(".secondhalf").addEventListener("click", addWidth);
   document
@@ -102,7 +107,7 @@ function singePiece(item) {
   const copy = template.cloneNode(true);
   copy
     .querySelector(".itemimg a")
-    .setAttribute("href", "productpage.html?id=" + item._id);
+    .setAttribute("href", "html/productpage.html?id=" + item._id);
   copy.querySelector(".itemname").textContent = item.Title;
   copy.querySelector(".itemprice").textContent = item.Price;
   copy.querySelector("img").src = item.primary_img;

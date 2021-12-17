@@ -251,6 +251,7 @@ figure img {
   flex-direction: column;
   align-items: center;
   margin-top: 14vw;
+  margin-bottom: 4vw;
 }
 .size {
   margin-right: 10px;
@@ -365,7 +366,7 @@ figure img {
     max-width: 80%;
   }
   .bordercontainer {
-    margin: 2vw 8vw;
+    margin: 1.5vw 8vw;
   }
   .purchaseInfo {
     margin-top: 4vw;
@@ -379,5 +380,8 @@ figure img {
   }
   .icons {
     display: flex;
+  }
+  .topinfo {
+    margin-top: 20vw;
   }
 }
