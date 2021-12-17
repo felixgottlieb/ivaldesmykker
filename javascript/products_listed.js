@@ -98,6 +98,12 @@ function singePiece(item) {
     header.textContent = "All products";
   }
 
+  document.title = item.Category + " | IVALDE";
+
+  if (!category) {
+    document.title = "All products | IVALDE";
+  }
+
   copy
     .querySelector(".itemimg a")
     .setAttribute("href", "productpage.html?id=" + item._id);
