@@ -56,8 +56,11 @@ if (mediaQuery2.matches) {
 /* -------------------FETCHING DATA------------------------------ */
 const urlParams = new URLSearchParams(window.location.search);
 const category = urlParams.get("category");
+let url = `https://naturalwinedata-1fc5.restdb.io/rest/ivaldeproducts?q={"Category":"${category}"}`;
 
-const url = `https://naturalwinedata-1fc5.restdb.io/rest/ivaldeproducts?q={"Category":"${category}"}`;
+if (!category) {
+  url = `https://naturalwinedata-1fc5.restdb.io/rest/ivaldeproducts`;
+}
 
 console.log(url);
 const options = {
@@ -84,12 +87,16 @@ fetch(url, options)
 function handleData(jewellery) {
   jewellery.forEach(singePiece);
 }
+var header = document.querySelector("h1");
 
 function singePiece(item) {
   const template = document.querySelector("#datatemplate").content;
-  console.log(item);
   const copy = template.cloneNode(true);
+
   document.querySelector("h1").textContent = item.Category;
+  if (!category) {
+    header.textContent = "All products";
+  }
 
   copy
     .querySelector(".itemimg a")

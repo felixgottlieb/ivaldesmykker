@@ -17,6 +17,7 @@
   position: fixed;
   top: 0;
   z-index: 5;
+  margin-top: 10px;
 }
 .burgermenu {
   align-self: center;
@@ -208,7 +209,7 @@
 .allImg {
   display: grid;
   grid-template-columns: 1fr;
-  margin-top: 50px;
+  margin-top: 80px;
   row-gap: 3vw;
 }
 
@@ -363,7 +364,7 @@ figure img {
     margin: 0px 7vw;
   }
   figure img {
-    max-width: 80%;
+    max-width: 96%;
   }
   .bordercontainer {
     margin: 1.5vw 8vw;

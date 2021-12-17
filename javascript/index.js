@@ -24,7 +24,7 @@ function addWidth() {
 
 /* ---------------Media queries------------------ */
 
-/* const mediaQuery = window.matchMedia("(max-width: 700px)");
+const mediaQuery = window.matchMedia("(max-width: 700px)");
 if (mediaQuery.matches) {
   document
     .querySelector(".burgericon")
@@ -35,7 +35,6 @@ function changeDisplay() {
   document.querySelector(".logo-image").classList.toggle("changeOpacity");
   document.querySelector(".icons").classList.toggle("changeOpacity");
 }
- */
 
 var bgVid = document.querySelector("#bgVid");
 
