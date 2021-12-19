@@ -62,7 +62,6 @@ if (!category) {
   url = `https://naturalwinedata-1fc5.restdb.io/rest/ivaldeproducts`;
 }
 
-console.log(url);
 const options = {
   headers: {
     "x-apikey": "61387a0c43cedb6d1f97ee32",
@@ -103,7 +102,6 @@ function singePiece(item) {
   if (!category) {
     document.title = "All products | IVALDE";
   }
-
   copy
     .querySelector(".itemimg a")
     .setAttribute("href", "productpage.html?id=" + item._id);

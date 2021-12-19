@@ -17,6 +17,7 @@
   position: fixed;
   top: 0;
   z-index: 5;
+  margin-top: 10px;
 }
 .burgermenu {
   align-self: center;
@@ -203,6 +204,7 @@
   transform-origin: center center;
   transition: 0.5s;
 }
+
 /* --------------------Productgrid------------------ */
 
 main {
@@ -262,7 +264,7 @@ main {
   font-weight: 400;
 }
 .h1border {
-  height: 1px;
+  height: 1.9px;
   background-color: var(--goldenColor);
 }
 
@@ -371,6 +373,17 @@ main {
   .h1border {
     height: 0.5px;
     background-color: var(--goldenColor);
+  }
+
+  .breadcrumbs {
+    display: flex;
+    grid-column: 1/-1;
+    padding-left: 55px;
+    padding-bottom: 1vw;
+    font-family: var(--generalfont);
+  }
+  .breadcrumbs ul li {
+    font-size: 1rem;
   }
 }
 @media (min-width: 1068px) {

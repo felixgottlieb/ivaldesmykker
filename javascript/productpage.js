@@ -71,10 +71,7 @@ fetch(url, options)
     console.error("An error occured:", e.message);
   });
 function handleData(item) {
-  console.log(item);
-
   document.title = item.Title + " | IVALDE";
-
 
   document.querySelector(".img1").src = item.primary_img;
   document.querySelector(".img2").src = item.img_2;
@@ -83,7 +80,4 @@ function handleData(item) {
   document.querySelector(".name").textContent = item.Title;
   document.querySelector(".desc").textContent = item.Description;
   document.querySelector(".price").textContent = item.Price;
-
-  /*   document.querySelector("document.title").textContent = item.title;
-   */
 }

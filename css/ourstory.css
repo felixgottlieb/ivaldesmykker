@@ -17,6 +17,7 @@
   position: fixed;
   top: 0;
   z-index: 5;
+  margin-top: 10px;
 }
 .burgermenu {
   align-self: center;

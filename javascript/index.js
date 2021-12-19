@@ -96,13 +96,12 @@ fetch(url, options)
   });
 
 function handleData(jewellery) {
-  console.log("jewellery");
   jewellery.forEach(singePiece);
 }
 
 function singePiece(item) {
   const template = document.querySelector("#datatemplate").content;
-  console.log(item);
+
   const copy = template.cloneNode(true);
   copy
     .querySelector(".itemimg a")

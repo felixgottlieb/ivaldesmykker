@@ -209,7 +209,6 @@
 .allImg {
   display: grid;
   grid-template-columns: 1fr;
-  margin-top: 80px;
   row-gap: 3vw;
 }
 
@@ -221,6 +220,7 @@ figure img {
   width: 100%;
 }
 /* ---------------infosection------------------ */
+
 .infosection {
   font-family: var(--generalfont);
 }
@@ -358,7 +358,6 @@ figure img {
   .allImg img {
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.251);
     border: 1px solid var(--goldenColor);
-    cursor: pointer;
   }
   .desccontainer {
     margin: 0px 7vw;
